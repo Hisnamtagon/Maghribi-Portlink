@@ -653,6 +653,11 @@ export default function AboutMe() {
             z-index: 13;
           }
 
+          #menu-screen video {
+          object-position: 80% center;
+          }
+
+
           .sc-main-portrait {
             transform: none;
             object-position: center top;
