@@ -375,7 +375,7 @@ export default function AboutMe() {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          object-position: top right;
+          object-position: fit;
           transform: skewX(8deg) scale(1.08);
           transform-origin: top right;
         }
@@ -593,7 +593,7 @@ export default function AboutMe() {
         .sc-char {
           position: absolute;
           top: 0;
-          left: 110px;
+          left: 135px;
           height: 100%;
           width: auto;
           max-width: 160px;
@@ -651,6 +651,12 @@ export default function AboutMe() {
             width: 46vw;
             height: 44vh;
             z-index: 13;
+          }
+
+        .sc-char {
+            left: clamp(64px, 8vw, 50px) !important;
+            max-width: clamp(100px, 14vw, 88px) !important;
+            clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%) !important;
           }
 
           #menu-screen video {
